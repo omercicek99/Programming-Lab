@@ -85,3 +85,107 @@ ls /root
 ls -alh /root
 cd
 exit
+ls
+cd /git
+ls -al
+chris @ server # ssh-keygen -t rsa -b 4096 -C "22omer76@gmail.com "
+cat .ssh / id_rsa.pub
+cat .ssh  /id_rsa.pub
+ls
+ls -a
+cd .ssh
+ls
+cat id.rsa.pub
+cat id_rsa.pub
+cd
+git remote set-url origin git@github.com:omercicek99/Programming-Lab
+git remote remove origin
+git remote -v
+git remote add origin ssh://git@github.com:omercicek99/Programming-Lab
+git fetch
+git remote set-url origin git@github.com:omercicek99//Programming-La
+git fetch
+git remote set-url origin git@github.com:omercicek99//Programming-Lab
+git fetch
+git remote set-url origin git@github.com:omercicek99/Programming-Lab
+git fetch
+git push
+git commit -m 170401047-dmesg.txt 
+git add 170401047-dmesg.txt 
+git push origin
+git push origin Programming-Lab
+git push
+git push origin master
+git remote set-url origin git@github.com:omercicek99/Programming-Lab/tree/master
+git push origin master
+git remote set-url origin git@github.com:omercicek99/Programming-Lab
+git push origin njn
+git push origin master
+git fetch origin
+git merge origin master
+git pull origin master
+git merge origin master
+git pull origin master
+git push origin master
+git fetch origin
+git merge origin master
+git merge origin njn
+git merge origin
+git merge origin master
+git push origin master
+git push origin main
+git pull --rebase
+git pull
+git pull --rebase
+git merge origin master
+git branch --set-upstream-to=origin/<branch> master
+git merge origin master
+git rebase --abort
+git rebas
+git rebase
+git rebase master
+git remote add origin
+git remote add origin omercicek99
+git remote -v
+git fetch
+git push
+git push origin omercicek99/Programming-Lab
+git push origin git@github.com:omercicek99/Programming-Lab
+git push origin master
+git push -u origin master
+git push -f origin master
+git push  origin master
+git reflog
+git reset
+ls -al
+cd .git
+ls
+cd branches
+ls
+vim FETCH_HEAD
+cd hooks
+cd /hooks
+ls
+cd ..
+vim FETCH_HEAD 
+cd refsw
+cd refs
+ls
+cd remoets
+cd remotes/
+ls
+cd origin/
+ls
+vim master
+ls
+cd
+git reset --hard HEAD~2
+git reset --hard HEAD~1
+git reset --hard HEAD
+git push  origin master
+git push -f origin master
+git checkout .
+git reset --hard HEAD~1
+git reset --hard HEAD~2
+git reset --hard HEAD
+git rm Programming-Lab
