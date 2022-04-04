@@ -1,0 +1,60 @@
+%matplotlib notebook ###Grafiği çıktı olarak browser da gösterilmesini sağlar
+
+import sympy as sym
+from sympy import Symbol
+from sympy import pprint
+import sympy.plotting as syp
+
+sigma=Symbol('sigma')
+print(2*sym.pi*sigma)
+pprint(2*sym.pi*sigma)
+->>>2*pi*sigma ,  2πσ
+pprint(sym.sqrt(2*sym.pi*sigma**2))
+->>>√2.√π.√σ**2
+
+sigma=Symbol('sigma')
+x=Symbol('x')
+mu=Symbol('mu')
+part_1=1/(sym.sqrt(2*sym.pi*sigma**2))
+part_2=sym.exp(-1*((x-mu)**2)/(2*sigma**2))
+my_gauss_function=part_1*part_2
+pprint(my_gauss_function)
+
+->>>
+     √2.e**-((-μ+x)**2)/2σ**2
+_____________________________________
+     2*√π*√σ**2
+ 
+syp.plot(my_gauss_function.subs({mu:1,sigma:3}),(x,-10,10),title='gauss distribution')###Koordinat düzleminde gösterme komutu...
+->>>#KOORDİNAT DÜZLEMİNDE GÖSTERİMİ AYNI DOSYANIN İÇERİSİNDEDİR(gauss distribution)
+
+
+for value in range(-5,5):
+    y=my_gauss_function.subs({mu:1,sigma:3,x:value}).evalf()
+    print(value,y)
+->>>
+-5 0.011735.........
+-4 0.011926.........
+-3 0.012106.........
+-2 0.012275.........
+-1 0.012435.........
+0  0.012579.........
+1  0.012712.........
+2  0.012833.........
+3  0.012940.........
+4  0.013034.........
+
+
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+x_values=[]
+y_values=[]
+for value in range(-50,50):
+    y=my_gauss_function.subs({mu:0,sigma:10,x:value}).evalf()
+    x_values.append(value)
+    y_values.append(y)
+plt.plot(x_values,y_values)###Grafik şeklinde gösterir.....
+plt.show()
+->>>>###GRAFİK AYNI DOSYANIN İÇERİSİNDEDİR(Gaus Graph)
+

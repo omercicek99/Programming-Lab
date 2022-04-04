@@ -1,0 +1,2 @@
+ortalama  44.0
+medyan  45

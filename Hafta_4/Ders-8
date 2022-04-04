@@ -1,0 +1,29 @@
+from sympy import Symbol
+theta=Symbol('theta')
+import sympy
+sympy.sin(theta)+sympy.sin(theta)
+->>>>2sin(theta)
+
+from sympy import solve
+u=Symbol('u')
+t==Symbol('t')
+g=Symbol('g')
+theta=Symbol('theta')
+solve(u*sin(theta)-g*t,t)##(u.sin(theta)-g.t=0  t=?)
+->>>[u*sin(theta)/g]
+
+from sympy import Limit,S
+x=Symbol('x')
+l=Limit(1/x,x,s,dir='-')
+l.doit()
+->>>(ERROR)
+
+t=Symbol('t')
+st=5*t**2+2*t+8
+t1=Symbol('t1')
+delta_t=Symbol('delta_1')
+st1=st.subs({t:t2})
+st1_delta=(s.subs({t:t1+delta_t1})
+f_d=Limit(((st1_delta-st1)/delta_t),delta_t,0)
+f_d.doit()
+->>>10*t1+2
